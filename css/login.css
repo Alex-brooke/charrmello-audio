@@ -69,16 +69,52 @@ body {
 }
 
 #from_Wrapper {
-    height: 600px;
+    height: 400px;
     width: 600px;
-    background-color: yellow;
     margin: 0 0 138px 0;
     position: relative;
     display: inline-block;
+    padding: 200px 0 0 0;
 }
 
+.signUpTitle {
+  color: #f2f2f2;
+  font-family: 'fivo_sansblack';
+  padding: 0 0 40px 0;
+}
 
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 350px;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f2f2f2;
+  border: none;
+  color: #3A5754;
+  border-radius: 22px;
+  font-family: 'fivo_sanslight';
+  font-size: 14px;
+}
 
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.signupbtn {
+  border-radius: 22px;
+  background-color: #ed7457;
+  border: #ed7457;
+  color: #f2f2f2;
+  width: 146px;
+  height: 42px;
+  font-family: 'fivo_sansmedium';
+  font-weight: 600;
+  margin: 10px 0 0 0;
+}
 
 
 
