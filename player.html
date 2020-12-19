@@ -12,14 +12,25 @@
 </head>
 
 <body>
-    <div class="heroCover" id="coverImage">
-        <div class="navWrapper">
-            <div class="topnav" id="mainNav">
-                <a href="index.html" class="menuItem">Home</a>
-                <a href="index.html" class="menuItem">Library</a>
-                <a href="profile.html" class="menuItem">Profile</a>
-                <a href="#" class="menuItem" id="CTA">Logout</a>
+    <div class="navWrapper">
+        <div class="topnav" id="mainNav">
+            <a href="index.html" class="menuItem" id="logo_Image"><img src="/assets/icons/header_logo.png"
+                    alt="logo-image"></a>
+            <a href="home.html" class="menuItem">Home</a>
+            <a href="library.html" class="menuItem">Library</a>
+            <a href="profile.html" class="menuItem">Profile</a>
+            <a href="about.html" class="menuItem">About</a>
+            <a href="login.html" class="menuItem" id="CTA">
+                <button class="nav_bttn">Sign Up</button>
+            </a>
+            <!-- Search Bar -->
+            <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Seach Library...">
+                    <button type="submit" class="searchButton">
+                        <img src="/assets/icons/Search.png" alt="">
+                    </button>
             </div>
+            <!-- End Search Bar -->
         </div>
     </div>
 
@@ -30,18 +41,19 @@
                     <div class="playing_tile" id="now_playing"></div>
                     <div class="info_card" id="current_info">
                         <p class="audio_title">
-                            Ep 1: To whom this may concern (A Journal)
+                            Ep 1: A Journal
                         </p>
                         <p class="audio_discription">
-                            Two giant companies go head to head in a race to for world dominance.Two Brothers find
-                            themselves right in the middle of this heat.
+                            Asdflkjaertvlkjasntvkjn (sits on keyboard) damn that dog but licks paws so meowzer, and
+                            catch mouse and gave it as a present has closed eyes but still sees you.
                             <br>
                             <br>
-                            Two giant companies go head to head in a race to for world dominance.Two Brothers find
-                            themselves right in the middle of this heat.
+                            Pet me pet me pet me pet me, bite, scratch, why are you petting me ptracy, meow for food,
+                            then when human fills food dish, take a few bites of food and continue meowing .
                         </p>
                         <p class="audio_informaion">
-                            <span class="info_heading">Cast:</span> Harry Pickup, James Dean, Pritesh Hashur, Judy Dench, Dev Patel, Tilda Swinton, Ubu Owayuh, Kristen Stuart, Maggie Thatcher, Tom Hardy.
+                            <span class="info_heading">Cast:</span> Harry Pickup, James Dean, Pritesh Hashur, Judy
+                            Dench, Dev Patel, Tilda Swinton, Ubu Owayuh, Kristen Stuart, Maggie Thatcher, Tom Hardy.
                             <br>
                             <br>
                             <span class="info_heading">Producers:</span> Alex Bleach, Alex Brooke, Christopher Nolan
@@ -51,30 +63,83 @@
                         </p>
                         <div class="player">
                             <audio controls>
-                                <source src="/assets/audio/Highways.mp3" type="audio/mp3" >
+                                <source src="/assets/audio/The_Last_Voyager.wav" type="audio/mp3">
                                 Your browser does not support the audio tag!
                             </audio>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Line Divide -->
+            <div class="title_divider">
+                <p id="heading_title">More Episodes</p>
+                <div class="heading_underline"></div>
+            </div>
+            <!-- End Line Divide -->
             <div class="moreEpisodesSection">
                 <div id="moreEpisodesWrapper">
-                    <a href="#">
-                        <div class="more_eps_tile" id="more_eps_tile_1">
-                            <img src="/assets/icons/small_play_button.png" alt="" id="small_player_icon">
+                    <div class="more_eps">
+                        <a href="#">
+                            <div class="more_eps_tile" id="more_eps_tile_1">
+                                <img src="/assets/icons/small_white_flame.png" alt="" id="small_player_icon">
+                            </div>
+                        </a>
+                        <div class="next_episode_info">
+                            <p class="more_epsisodes_title">
+                                Ep 1: A Journal
+                            </p>
+                            <p class="more_eps_discription">
+                                Asdflkjaertvlkjasntvkjn (sits on keyboard) damn that dog but licks paws so meowzer, and
+                                catch mouse and gave it as a present has closed eyes but still sees you.
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="more_eps_tile" id="more_eps_tile_2">
-                            <img src="/assets/icons/small_play_button.png" alt="" id="small_player_icon">
+                        <a href="#">
+                            <div>
+                                <img src="/assets/icons/medium_player.png" alt="" class="more_eps_player">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="more_eps">
+                        <a href="#">
+                            <div class="more_eps_tile" id="more_eps_tile_2">
+                                <img src="/assets/icons/small_white_flame.png" alt="" id="small_player_icon">
+                            </div>
+                        </a>
+                        <div class="next_episode_info">
+                            <p class="more_epsisodes_title">
+                                Ep 2 :  Fierce Energy
+                            </p>
+                            <p class="more_eps_discription">
+                                Asdflkjaertvlkjasntvkjn (sits on keyboard) damn that dog but licks paws so meowzer, and
+                                catch mouse and gave it as a present has closed eyes but still sees you.
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="more_eps_tile" id="more_eps_tile_3">
-                            <img src="/assets/icons/small_play_button.png" alt="" id="small_player_icon">
+                        <a href="#">
+                            <div>
+                                <img src="/assets/icons/medium_player.png" alt="" class="more_eps_player">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="more_eps">
+                        <a href="#">
+                            <div class="more_eps_tile" id="more_eps_tile_3">
+                                <img src="/assets/icons/small_white_flame.png" alt="" id="small_player_icon">
+                            </div>
+                        </a>
+                        <div class="next_episode_info">
+                            <p class="more_epsisodes_title">
+                                Ep 3:  Captain Captain
+                            </p>
+                            <p class="more_eps_discription">
+                                Asdflkjaertvlkjasntvkjn (sits on keyboard) damn that dog but licks paws so meowzer, and
+                                catch mouse and gave it as a present has closed eyes but still sees you.
                         </div>
-                    </a>
+                        <a href="#">
+                            <div>
+                                <img src="/assets/icons/medium_player.png" alt="" class="more_eps_player">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

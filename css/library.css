@@ -2,10 +2,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* My code */
 body {
-    background-color: #000;
+    background-color:#F1F1F1;
+    letter-spacing: 0.5px;
 }
   
-  
+a {
+    text-decoration: none;
+}
+
 h1 {
       font-size: 40px;
       font-weight: 900;
@@ -15,169 +19,226 @@ h3 {
       font-size: 24px;
 }
 
+button {
+    border-radius: 30px;
+    background-color: #ed7457;
+    border: none;
+}
 
-  
 /* Navigation */
-
-
-
 
 /* menu Wrapper */
 .navWrapper {
-    margin: 0 auto;
-    width: 78%;
-    padding-bottom: 10%;
+    background-color: #000000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
+#mainNav {
+    height: 75px;
 }
 
 
+#logo_Image {
+  margin: 0 0 0 0;
+}
+
+.nav_bttn {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  background: #ED7458;
+  border-radius: 30px;
+  height: 35px;
+  width: 120px;
+  color: #f2f2f2;
+  padding: 0 0 0 0;
+  font-family: 'fivo_sansmedium';
+}
+
 .topnav {
     overflow: hidden;
+    margin: 0 auto;
+    width: 88%;
 }
   
 .topnav a {
     float: left;
     display: block;
-    color:  #f2f2f2;
+    color:  #f1f1f1;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'fivo_sansmedium';
 }
   
 .topnav a:hover {
     font-weight: 900;
-    
-}
+} 
   
-.topnav a.active {
-    color: #ed7457;
-    font-weight: 900;
+.topnav .icon {
+    display: none;
 }
 
+
 .menuItem, #CTA {
-      margin: 10px 0 0 0;
+      margin: 15px 0 0 0;
 }
 
 #CTA  {
       float: right;
+      padding: 5px 0 0 0;
 }
-
-
-
 /* End Of Navigation */
-
-
-
-/* Hero Cover */
-
-#coverImage {
-    background-image:linear-gradient(0deg, #000000 0%, #000000 0.01%, rgba(0, 0, 0, 0) 73.96%), url(/assets/imgs/stories/two_soldiers.jpg);
-    /* background-color: grey; */
-    background-size: cover;
-    height: 649px;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
-
-
-.coverTitle {
-    margin: 400px 0 0 20px;
-    color: #f2f2f2; 
-}
-
-#mainTitle {
-    font-weight: 950;
-    font-size: 65px;
-    line-height: 68px;
-    padding: 0 0 8px 0;
-    font-family: 'fivo_sans_modernextra_black';
-    color: #ED7458;
-}
-
-#subTitle {
-    font-style: normal;
-    font-weight: 450;
-    font-size: 24px;
-    line-height: 25px;
-    font-family: 'fivo_sansmedium';
-}
-
-/* End of cover image */
-
 
 /* Search Bar */
 
 .search {
-    width: 100%;
+    width: 320px;
     position: relative;
     display: flex;
-  }
+    margin: 18px 0 0 0;
+    padding: 0 0 0 20%;
+}
   
-  .searchTerm {
+.searchTerm {
     width: 100%;
     border: 0px;
     border-right: none;
     padding: 0 0px 0 25px;
-    height: 45px;
+    height: 35px;
     border-radius: 30px 0 0 30px;
     outline: none;
     color: #C4C4C4;
-  }
+}
   
-  .searchTerm:focus{
+.searchTerm:focus{
     color: #131313;
-  }
+}
   
-  .searchButton {
-    width: 40px;
-    height: 45px;
+.searchButton {
+    width: 60px;
+    height: 35px;
     border: 0px;
-    padding: 0 28px 0 0;
     background: #fff;
     text-align: center;
     border-radius: 0 30px 30px 0;
     cursor: pointer;
-    font-size: 20px;
-  }
+    font-size: 14px;
+}
   
-  .wrap{
+.wrap{
     width: 20%;
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-
-
-/*
-
-.ContentWrapper {
-    margin: 0 auto;
-    width: 60%;
 }
+
+/* End Search Bar */
+
+
+
+/* Hero Cover */
+
+
+.coverWrapper {
+  margin: 0 auto;
+  width: 72%;
+}
+
+
+.coverImage {
+  background-image: linear-gradient(0deg, #000000 0%, #000000 0.01%, rgba(0, 0, 0, 0.89) 18.27%, rgba(0, 0, 0, 0.27) 43.6%, rgba(0, 0, 0, 0) 70.83%, #000000 100%), url(/assets/imgs/stories/fire_dance.jpg);
+  /* background-color: grey; */
+  background-size: cover;
+  height: 560px;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin: 0 0 86px 0;
+}
+
+
+.coverTitle {
+  color: #f2f2f2;
+  padding: 350px 0 0 60px; 
+}
+
+#mainTitle {
+  font-weight: 950;
+  font-size: 65px;
+  line-height: 68px;
+  padding: 0 0 8px 0;
+  font-family: 'fivo_sans_modernextra_black';
+  color: #ED7458;
+}
+
+#subTitle {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'fivo_sansmedium';
+  width: 320px;
+}
+
+/* End of cover image */
+
+
+
+
 
 /* Main Content */
 
-.ContentWrapper {
+/*  Underline */
+
+.title_divider {
     margin: 0 auto;
-    width: 76%;
+    width: 90%;
 }
 
-.newUploads {
+.heading_underline {
+    height: 1px;
+    background-color: #ed7457;
+    text-align: center;
+    width: 98%;
+}
+
+#green_line {
+    background-color: #3B5753;
+}
+
+#heading_title {
+    font-family: 'fivo_sansmedium';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 19px;
+    color: #3B5753;
+    padding: 0 0 10px 0;
+}
+
+/* End Underline */
+
+.FeaturedContentWrapper {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+.featured_content {
     width: 90%;
-    height: 376px;
-    margin: 280px auto 150px auto;
+    height: 380px;
+    margin: 48px auto 48px auto;
     display: flex;
 }
 
-.card {
-    width: 303px;
-    height: 376px;
+.featured_card {
+    width: 270px;
+    height: 380px;
     margin: 0 30px 0 0;
     background-image: url(/assets/imgs/coming_soon.png);
     /* background-color: grey; */
@@ -186,153 +247,304 @@ h3 {
     background-repeat: no-repeat;
 }
 
-#card_1{
+#featured_card_1{
     background-image: url(/assets/imgs/story_titles/the_last_voyager_library_img.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 5px #ed7457 solid;
 }
 
-#card_2{
+#featured_card_2{
     background-image: url(/assets/imgs/story_titles/donny_dio_library.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#card_3{
+#featured_card_3{
     background-image: url(/assets/imgs/story_titles/apolitical_library.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#card_4{
+#featured_card_4{
     background-image: url(/assets/imgs/story_titles/vertical_library.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* End of Featureed */
+
+
+#upload_image_1{
+    background-image: url(/assets/imgs/story_titles/upload/shells.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#upload_image_2{
+    background-image: url(/assets/imgs/story_titles/upload/i_am.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+#upload_image_3{
+    background-image: url(/assets/imgs/story_titles/upload/where_art_thou.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+#upload_image_4{
+    background-image: url(/assets/imgs/story_titles/upload/cielestial.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+/* First Row */
+
+#upload_image_5{
+    background-image: url(/assets/imgs/story_titles/upload/infra.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#upload_image_6{
+    background-image: url(/assets/imgs/story_titles/upload/digital.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+#upload_image_7{
+    background-image: url(/assets/imgs/story_titles/upload/loud_silence.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+#upload_image_8{
+    background-image: url(/assets/imgs/story_titles/upload/exo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 } 
 
 
-.subLibrary_Wrapper {
-    width: 90%;
-    height: 204px;
-    margin: 100px auto 100px auto;
+
+
+/* Second Row */
+
+
+/* Third Row */
+
+/* Newest */
+.newest_container {
+    margin: 0 auto;
+    width: 52%;
+}
+
+.uploads_row {
+    width: 984px;
+    height: 378px;
+    margin: 46px 0 110px 0;
     display: flex;
-    padding: 0 0 0 38px;
 }
 
-.subCard {
-    width: 145px;
-    height: 204px;
-    margin: 0 15px 0 0;
-    background-color: yellow;
-    background-image: url(/assets/imgs/story_titles/coming_soon.png);
-    /* background-color: grey; */
+.upload_card {
+    width: 222px;
+    height: 378px;
+    margin: 0 24px 0 0;
+}
+
+.upload_image {
+    width: 222px;
+    height: 297px;
+    background-color: #3B5753;
+    background-image: url(/assets/imgs/default.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#subCard_1 {
-    background-image: url(/assets/imgs/story_titles/cancerous_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_creator_time_info {
+    display: flex;
 }
 
-#subCard_2 {
-    background-image: url(/assets/imgs/story_titles/shells_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_title {
+    font-family: 'fivo_sansblack';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    color: #3B5753;
+    padding: 0 0 15px 0;
+    letter-spacing: 0.5px;
 }
 
-#subCard_3 {
-    background-image: url(/assets/imgs/story_titles/i_am_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.creator_dp {
+    border-radius: 30px;
+    background-color: #AFD9C7;
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 0 0;
 }
 
-#subCard_4 {
-    background-image: url(/assets/imgs/story_titles/where_for_art_thou_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_user {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 136.5%;
+    /* or 14px */
+    color: #ED7457;
+    font-family: 'fivo_sansregular';
+    letter-spacing: 0.5px;
 }
 
-#subCard_5 {
-    background-image: url(/assets/imgs/story_titles/loud_silence_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_time_lapsed {
+    font-family: 'fivo_sanslight';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 136.5%;
+    /* or 14px */
+    color: #3B5753;
+    
+    letter-spacing: 0.5px;
 }
 
-#subCard_6 {
-    background-image: url(/assets/imgs/story_titles/cilestial_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.username_time {
+    margin: 0 80px 0 0;
 }
 
-#subCard_7 {
-    background-image: url(/assets/imgs/story_titles/010101_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_info {
+    padding: 18px 0 0 0;
 }
 
-#subCard_8 {
-    background-image: url(/assets/imgs/story_titles/digital_captivity_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+/* End Newest */
 
 /* End of Main Content */
 
-/* Footer */
+
+
+
+/* CTA */
+
+.creator_CTA {
+    height: 432px;
+    width: 100%;
+    background-color: #AFD9C7;
+    padding: 150px 0 0 0;
+    position: relative;
+    top: 15px;
+}
+
+.CTA_container {
+    margin: 0 auto;
+    width: 52%;
+}
+
+
+#be_a_creator {
+    width: 445px;
+}
+
+
+#cta_heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 25px;
+    color: #000000;
+    font-family: 'fivo_sansblack';
+    padding: 0 0 20px 0;
+}
+
+
+.cta_text {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+    font-family: 'fivo_sansmedium';
+    padding: 0 0 20px 0;
+}
+
+.c_cta_button {
+    border-radius: 30px;
+    background-color: #3B5753;
+    border: none;
+    color: #f2f2f2;
+    width: 300px;
+    height: 42px;
+    font-family: 'fivo_sansmedium';
+    font-weight: 150;
+    font-size: 18px;
+}
+
+#make_bttn {
+    margin: 30px 0 0 0;
+}
+
+/* End of CTA */
+
+
+
 
 /* Footer */ 
 
+.FooterNavWrapper {
+    margin: 0 auto;
+    width: 85%;
+}
+
 .footerSection {
-    height: 120px;
-    background-color: #f2f2f2;
+  height: 182px;
+  background-color: #040404;
+  margin: 0;
 }
 
 .footerLogo p img {
-    display: flex;
+  display: flex;
 }
 
 #footerLogo {
-    width: 90px;
-    float: right;
+  width: 90px;
+  float: right; 
+  position: relative;
 }
 
 #copyRight  p {
-    position: relative;
-    top: 80px;
-    font-size: 14px;
-    font-family: 'fivo_sanslight';
+  position: relative;
+  color: #535353;
+  top: 75px;
+  font-size: 12px;
+  font-family: 'fivo_sanslight';
 }
 
 .FooterMenu a {
-    color: #131313;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: 'fivo_sansmedium';
-    text-decoration: none;
-    position: relative;
-    top: 40px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'fivo_sansmedium';
+  text-decoration: none;
+  position: relative;
+  top: 40px;
+  display: block;
 }
-
 /* Footer */
-
-
-
 
 
 

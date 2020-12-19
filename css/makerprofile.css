@@ -1,23 +1,25 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}:focus{outline:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;*display:inline;*zoom:1;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:02px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,select{text-transform:none}button,htmlinput[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],htmlinput[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}html,button,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:0.2em 0;background:#ccc;color:#000;padding:0.2em 0}
 
 /* My code */
+
 body {
     background-color: #000;
-  }
+}
   
   
-  h1 {
+h1 {
       font-size: 40px;
       font-weight: 900;
-  }
+}
   
-  h3 {                             
+h3 {                             
       font-size: 24px;
-  }
+}
 
-  a {
-      text-decoration: none;
-  }
+
+a {
+    text-decoration: none;
+}
 
 button {
     border-radius: 30px;
@@ -25,13 +27,17 @@ button {
     border: none;
 }
 
-
-  
 /* Navigation */
 
 /* menu Wrapper */
 .navWrapper {
     background-color: #f2f2f2;
+}
+
+#orangeBar {
+    background-color: #ed7457;
+    height: 5px;
+    width: 100%;
 }
 
 #mainNav {
@@ -49,13 +55,18 @@ button {
   font-size: 14px;
   line-height: 19px;
   text-align: center;
-  background: #ED7458;
+  background: #AFD9C7;
   border-radius: 30px;
   height: 35px;
   width: 120px;
-  color: #f2f2f2;
+  color: #3B5753;
   padding: 0 0 0 0;
   font-family: 'fivo_sansmedium';
+}
+
+.nav_bttn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 900;
 }
 
 .topnav {
@@ -141,101 +152,38 @@ button {
 /* End Search Bar */
 
 
-/* Mian Content */ 
+/* User Image */
 
-/* Now Playing & Player */
-
-.contentWrapper {
-    margin: 0 auto;
-    width: 76%;
+.user_Profile-Container {
+    text-align: center;
+    color: #f2f2f2;
 }
 
-.playerSectionContainer {
-    height: 490px;
-    margin: 80px 0 80px 0;
-    
-}
-
-#playerSectionWrapper {
-    margin: 0 auto;
-    width: 90%;
-    display: flex;
-}
-
-.playing_tile {
-    width: 385px;
-    height: 490px;
-    border-radius: 30px;
-    margin: 0 50px 0 0;
-    background-image: url(/assets/imgs/now_playing/The_Last_Voyager.png);
+.profile_Image {
+    width: 200px;
+    height: 200px;
+    margin: 100px 0 0 0;
+    display: inline-block;
+    border-radius: 120px;
+    background-image: url(/assets/imgs/user_prof_img/cat_blue.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.info_card {
-    height: 490px;
-    width: 900px;
+.user_Title {
+    font-family: 'fivo_sans_modernextra_black';
+    padding: 20px 0 0 0;
 }
 
-.audio_title {
-    font-weight: bold;
-    font-size: 24px;
-    font-family: 'fivo_sansblack';
-    color: #f2f2f2;
-    letter-spacing: 0.5px;
-    padding: 60px 0 0 0;
-}
-
-.audio_discription {
-    column-count: 2;
-    width: 800px;
-    font-size: 18px;
-    line-height: 22px;
-    padding: 40px 0 0 0;
-    color: #f2f2f2;
-    font-family: 'fivo_sansmedium';
-}
-
-.audio_informaion {
-    margin: 40px 0 20px 0;
-    width: 350px;
-    color: #f2f2f2;
-    font-weight: 250;
-    font-size: 12px;
-    line-height: 136.5%;
-    font-family: 'fivo_sanslight';
-}
-
-.info_heading {
-    font-family: 'fivo_sansmedium';
-    font-weight: 500;
-}
-
-
-
-/* Audio Player */
-
-
-audio { 
-    width: 600px; 
-    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
-    border-radius: 90px;
-    transform: scale(1.05);
-}
-/* Audio Player */
-
-
-/* End Now Playing & Player */
-
-
+/* End User Image */
 
 
 /*  Underline */
 
 .title_divider {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 
 .heading_underline {
@@ -254,96 +202,135 @@ audio {
     line-height: 19px;
     color: #f2f2f2;
     padding: 0 0 10px 0;
-    margin: 180px 0 0 0;
+    margin: 140px 0 0 0;
 }
 
 /* End Heading Underline */
 
 
 
+/* Main Content */
 
-/* More Episodes */
-
-.moreEpisodesSection {
-    height: 244px;
-    margin: 0 0 10px 0;
-    display: flex;
-}
-
-#moreEpisodesWrapper {
+.ContentWrapper {
     margin: 0 auto;
-    width: 90%;
+    width: 76%;
 }
 
-.more_eps {
+#upload_image_1 {
+    background-image: url(/assets/imgs/story_titles/upload/cielestial.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#upload_image_2 {
+    background-image: url(/assets/imgs/story_titles/upload/shells.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#upload_image_3 {
+    background-image: url(/assets/imgs/story_titles/upload/exo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Newest */
+.newest_container {
+    margin: 0 auto;
+    width: 52%;
+}
+
+.uploads_row {
+    width: 984px;
+    height: 378px;
+    margin: 46px 0 110px 0;
     display: flex;
-    margin: 0 0 80px 0;
 }
 
-.more_eps_tile {
-    width: 385px;
-    height: 190px;
-    background-color: gray;
-    border-radius: 30px;
-    margin: 0 20px 0 0;
+.upload_card {
+    width: 222px;
+    height: 378px;
+    margin: 0 24px 0 0;
 }
 
-#more_eps_tile_1 {
-    background-image: url(/assets/imgs/stories/ice_tunnle.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_image {
+    width: 222px;
+    height: 297px;
+    background-color: #C4C4C4;
 }
 
-#more_eps_tile_2 {
-    background-image: url(/assets/imgs/stories/tiger.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_creator_time_info {
+    display: flex;
 }
 
-#more_eps_tile_3 {
-    background-image: url(/assets/imgs/stories/fire_dance.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-
-#small_player_icon {
-    margin: 130px 25px 0 0;
-    float: right;
-    width: 26px;
-}
-
-.more_epsisodes_title {
-    font-weight: bold;
-    font-size: 18px;
+.upload_title {
     font-family: 'fivo_sansblack';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
     color: #f2f2f2;
+    padding: 0 0 15px 0;
     letter-spacing: 0.5px;
-    padding: 60px 0 0 0;
 }
 
-.more_eps_discription {
-    width: 345px;
-    font-size: 14px;
-    line-height: 22px;
-    padding: 20px 0 0 0;
+.creator_dp {
+    border-radius: 30px;
+    background-color: #AFD9C7;
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 0 0;
+}
+
+.upload_user {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 136.5%;
+    /* or 14px */
+    color: #ED7457;
+    font-family: 'fivo_sansregular';
+    letter-spacing: 0.5px;
+}
+
+.upload_time_lapsed {
+    font-family: 'fivo_sanslight';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 136.5%;
+    /* or 14px */
     color: #f2f2f2;
-    font-family: 'fivo_sansmedium';
+    
+    letter-spacing: 0.5px;
 }
 
-.next_episode_info {
-    padding: 0 220px 0 70px;
+
+.username_time {
+    margin: 0 115px 0 0;
 }
 
-.more_eps_player {
-    margin: 60px 0 0 0;
+.upload_info {
+    padding: 18px 0 0 0;
 }
 
-/*  End of More Episodes */
+/* End Newest */
+
+
+
+
+
+
+
+
+#subCard_8 {
+    background-image: url(/assets/imgs/story_titles/digital_captivity_library.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* End of Main Content */
-

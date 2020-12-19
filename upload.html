@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 .0">
+    <title>Charrmello</title>
+    <link rel="icon" href="/assets/icons/Favicon_charrmello.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="/css/upload.css">
+    <link rel="stylesheet" href="/css/fonts/webfontkit_FivoSans_Main/stylesheet_Fivo_Reg.css">
+    <link rel="stylesheet" href="/css//fonts/webfontkit-FivoSansModern/stylesheet.css">
+</head>
+
+<body>
+    <div class="navWrapper">
+        <div class="topnav" id="mainNav">
+            <a href="home.html" class="menuItem" id="logo_Image">
+                <img src="/assets/icons/header_logo.png" alt="logo-image">
+            </a>
+            <a href="profile.html" class="menuItem" id="CTA">
+                <img src="/assets/icons/exit_bttn.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="cover_wrapper">
+        <h1 class="pg_title"> Upload Station</h1>
+        <div class="cover_about">
+            <div id="cover_img"></div>
+            <div id="about">
+                <div id="info">
+                    <h2 id="title">A Quick Note</h2>
+                    <p class="cover_text">
+                        Hey, HUGE thank you for wanting to be an active member of the Charremllo squad.
+                    </p>
+                    <p class="cover_text">
+                        I know you have some awesome stories to tell and incredible lessons to conduct.
+                    </p>
+                    <p class="cover_text">
+                        As long as you stay within the <a href="#"><span id="guidlines">guidlines</span></a>, then
+                        you’re free to let that creativity go wild!
+                    </p>
+                    <p class="cover_text">
+                        You have our blessing. <br>
+                        Now go and create awesome!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Upload Form -->
+
+        <div class="upload_form">
+            <label for="audtitle">Title</label>
+            <input type="text" id="audtitle" name="audiotitle" placeholder="what you calling this thing?">
+
+            <label for="audupld">Audio Upload</label>
+            <div id="audiowrap">
+                <input type="text" id="audupld" name="audioupload" placeholder="Cool. Upload your audio">
+                <button id="upld_aud">Add Cover</button>
+            </div>
+
+
+            <label for="contenttype">Content Type</label>
+            <select id="contenttype" name="contenttype">
+                <option value="tech">Tech</option>
+                <option value="kids">Kids</option>
+                <option value="news">News</option>
+                <option value="comedy">Comedy</option>
+                <option value="fiction">Fiction</option>
+                <option value="education">Education</option>
+                <option value="drama">Drama</option>
+                <option value="sciencefiction">Science Fiction</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="other">Other (More categories added every day)</option>
+            </select>
+
+            <label for="addCover">Cover Image</label>
+            <div class="add_img">
+                <div id="img_wrapper">
+                    <div id="img_upld"></div>
+                    <button id="upld_cov">Add Cover</button>
+                </div>
+            </div>
+
+            <label for="directrs">Directors</label>
+            <input type="text" id="directrs" name="directors" placeholder="Who's the captain of this ship?">
+
+            <label for="prod">Producers</label>
+            <input type="text" id="prod" name="producers" placeholder="who's keeping this thing a float?">
+
+            <label for="castcrew">Cast</label>
+            <input type="text" id="castcrew" name="cast" placeholder="Joe Faker, Josh Lomax, Eddie Stobart..">
+
+            <p id="form_title" for="desc">Description</p>
+            <textarea type="text" id="desc" name="description"
+                placeholder="Here's what this thing is about.."></textarea>
+
+            <a href="review.html">
+                <input type="submit" value="Review">
+            </a>
+        </div>
+
+        <!-- End Upload Form-->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footerSection">
+    </footer>
+    <!-- End of Footer -->
+
+
+</body>
+
+</html>

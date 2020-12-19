@@ -16,55 +16,134 @@ body {
   }
 
 
-  
-  /* Navigation */
+a {
+    text-decoration: none;
+}
 
+button {
+    border-radius: 30px;
+    background-color: #ed7457;
+    border: none;
+}
 
-
+/* Navigation */
 
 /* menu Wrapper */
 .navWrapper {
-    margin: 0 auto;
-    width: 78%;
-    padding-bottom: 90px;
+    background-color: #f2f2f2;
+}
 
+#mainNav {
+    height: 75px;
 }
 
 
+#logo_Image {
+  margin: 0 0 0 0;
+}
+
+.nav_bttn {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  background: #ED7458;
+  border-radius: 30px;
+  height: 35px;
+  width: 120px;
+  color: #f2f2f2;
+  padding: 0 0 0 0;
+  font-family: 'fivo_sansmedium';
+  
+}
+
+.nav_bttn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 900;
+}
+
 .topnav {
     overflow: hidden;
+    margin: 0 auto;
+    width: 88%;
 }
   
 .topnav a {
     float: left;
     display: block;
-    color:  #f2f2f2;
+    color:  #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'fivo_sansmedium';
 }
   
 .topnav a:hover {
     font-weight: 900;
-    
-}
+} 
   
-.topnav a.active {
-    color: #ed7457;
-    font-weight: 900;
+.topnav .icon {
+    display: none;
 }
 
+
 .menuItem, #CTA {
-      margin: 10px 0 0 0;
+      margin: 15px 0 0 0;
 }
 
 #CTA  {
       float: right;
+      padding: 5px 0 0 0;
+}
+/* End Of Navigation */
+
+/* Search Bar */
+
+.search {
+    width: 340px;
+    position: relative;
+    display: flex;
+    margin: 18px 0 0 0;
+    padding: 0 0 0 20%;
+}
+  
+.searchTerm {
+    width: 100%;
+    border: 0px;
+    border-right: none;
+    padding: 0 0px 0 25px;
+    height: 35px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    color: #C4C4C4;
+}
+  
+.searchTerm:focus{
+    color: #131313;
+}
+  
+.searchButton {
+    width: 60px;
+    height: 35px;
+    border: 0px;
+    background: #fff;
+    text-align: center;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+.wrap{
+    width: 20%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* End Of Navigation */
+/* End Search Bar */
 
 
 /* User Image */
@@ -77,7 +156,7 @@ body {
 .profile_Image {
     width: 200px;
     height: 200px;
-    position: relative;
+    margin: 100px 0 0 0;
     display: inline-block;
     border-radius: 120px;
     background-image: url(/assets/imgs/user_prof_img/cat_blue.jpg);
@@ -88,10 +167,40 @@ body {
 
 .user_Title {
     font-family: 'fivo_sans_modernextra_black';
-    padding: 20px 0 59px 0;
+    padding: 20px 0 0 0;
 }
 
 /* End User Image */
+
+
+/*  Underline */
+
+.title_divider {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.heading_underline {
+    height: 1px;
+    background-color: #f2f2f2;
+    text-align: center;
+    width: 98%;
+    margin: 0 0 45px 0;
+}
+
+#heading_title {
+    font-family: 'fivo_sansmedium';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 19px;
+    color: #f2f2f2;
+    padding: 0 0 10px 0;
+    margin: 140px 0 0 0;
+}
+
+/* End Heading Underline */
+
 
 
 /* Main Content */
@@ -101,82 +210,116 @@ body {
     width: 76%;
 }
 
-.my_shelf {
-    margin: 0 0 0 90px;
-    color: #f2f2f2;
-    font-family: 'fivo_sansmedium';
-    font-size: 18px;
+/* Newest */
+.newest_container {
+    margin: 0 auto;
+    width: 52%;
 }
 
-
-.subLibrary_Wrapper {
-    width: 90%;
-    height: 204px;
-    margin: 20px auto 40px auto;
+.uploads_row {
+    width: 984px;
+    height: 378px;
+    margin: 46px 0 110px 0;
     display: flex;
-    padding: 0 0 0 38px;
 }
 
-.subCard {
-    width: 145px;
-    height: 204px;
-    margin: 0 15px 0 0;
-    background-color: #c0c0c0;
-    background-image: url(/assets/imgs/story_titles/coming_soon.png);
-    /* background-color: grey; */
+.upload_card {
+    width: 222px;
+    height: 378px;
+    margin: 0 24px 0 0;
+}
+
+.upload_image {
+    width: 222px;
+    height: 297px;
+    background-color: #C4C4C4;
+}
+
+#upload_image_1 {
+    background-image: url(/assets/imgs/story_titles/upload/cielestial.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#subCard_1 {
-    background-image: url(/assets/imgs/story_titles/cancerous_library.png);
+#upload_image_2 {
+    background-image: url(/assets/imgs/story_titles/upload/shells.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#subCard_2 {
-    background-image: url(/assets/imgs/story_titles/shells_library.png);
+#upload_image_3 {
+    background-image: url(/assets/imgs/story_titles/upload/exo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#subCard_3 {
-    background-image: url(/assets/imgs/story_titles/i_am_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.upload_creator_time_info {
+    display: flex;
 }
 
-#subCard_4 {
-    background-image: url(/assets/imgs/story_titles/where_for_art_thou_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_title {
+    font-family: 'fivo_sansblack';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    color: #f2f2f2;
+    padding: 0 0 15px 0;
+    letter-spacing: 0.5px;
 }
 
-#subCard_5 {
-    background-image: url(/assets/imgs/story_titles/loud_silence_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.creator_dp {
+    border-radius: 30px;
+    background-color: #AFD9C7;
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 0 0;
 }
 
-#subCard_6 {
-    background-image: url(/assets/imgs/story_titles/cilestial_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_user {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 136.5%;
+    /* or 14px */
+    color: #ED7457;
+    font-family: 'fivo_sansregular';
+    letter-spacing: 0.5px;
 }
 
-#subCard_7 {
-    background-image: url(/assets/imgs/story_titles/010101_library.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.upload_time_lapsed {
+    font-family: 'fivo_sanslight';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 136.5%;
+    /* or 14px */
+    color: #f2f2f2;
+    
+    letter-spacing: 0.5px;
 }
+
+
+.username_time {
+    margin: 0 115px 0 0;
+}
+
+.upload_info {
+    padding: 18px 0 0 0;
+}
+
+/* End Newest */
+
+
+
+
+
+
+
 
 #subCard_8 {
     background-image: url(/assets/imgs/story_titles/digital_captivity_library.png);

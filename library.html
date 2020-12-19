@@ -12,163 +12,353 @@
 </head>
 
 <body>
-    <div class="heroCover" id="coverImage">
-        <div class="navWrapper">
-            <div class="topnav" id="mainNav">
-                <a href="index.html" class="menuItem">Home</a>
-                <a href="library.html" class="menuItem">Library</a>
-                <a href="profile.html" class="menuItem">Profile</a>
-                <a href="login.html" class="menuItem" id="CTA">Logout</a>
+    <div class="navWrapper">
+        <div class="topnav" id="mainNav">
+            <a href="index.html" class="menuItem" id="logo_Image"><img src="/assets/icons/header_logo.png"
+                    alt="logo-image"></a>
+            <a href="home.html" class="menuItem">Home</a>
+            <a href="library.html" class="menuItem">Library</a>
+            <a href="profile.html" class="menuItem">Profile</a>
+            <a href="about.html" class="menuItem">About</a>
+            <a href="login.html" class="menuItem" id="CTA">
+                <button class="nav_bttn">Logout</button>
+            </a>
+            <!-- Search Bar -->
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Seach Library...">
+                <button type="submit" class="searchButton">
+                    <img src="/assets/icons/Search.png" alt="">
+                </button>
             </div>
+            <!-- End Search Bar -->
+        </div>
+    </div>
 
+    <!-- Hero Image -->
+
+    <div class="coverWrapper">
+        <div class="coverImage">
             <div class="coverTitle">
                 <h1 id="mainTitle">Charrmello</h1>
-                <h3 id="subTitle">Your New Audio Cimema</h3>
+                <h3 id="subTitle">Bringing Storytelling & Learning To Life</h3>
             </div>
         </div>
     </div>
 
-    <!-- Search Bar-->
-    <div class="wrap">
-        <div class="search">
-            <input type="text" class="searchTerm" placeholder="Seach Library...">
-            <button type="submit" class="searchButton">
-                <img src="/assets/icons/Search.png" alt="">
-            </button>
-        </div>
-    </div>
-    <!-- End of search bar-->
+    <!-- End of Hero Image-->
 
 
     <!-- Main Content-->
     <main>
-        <div class="ContentWrapper">
-            <div class="newUploads">
+        <div class="FeaturedContentWrapper">
+            <div class="title_divider">
+                <p id="heading_title">Featured</p>
+                <div class="heading_underline"></div>
+            </div>
+            <div class="featured_content">
                 <div>
                     <a href="/player.html">
-                        <div class="card" id="card_1"></div>
+                        <div class="featured_card" id="featured_card_1"></div>
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <div class="card" id="card_2"></div>
+                        <div class="featured_card" id="featured_card_2"></div>
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <div class="card" id="card_3"></div>
+                        <div class="featured_card" id="featured_card_3"></div>
                     </a>
                 </div>
                 <div>
                     <a href="#">
-                        <div class="card" id="card_4"></div>
+                        <div class="featured_card" id="featured_card_4"></div>
                     </a>
                 </div>
             </div>
-            <div class="subLibrary_Wrapper">
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_1"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_2"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_3"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_4"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_5"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_6"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_7"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_8"></div>
-                    </a>
-                </div>
-                
-            </div>
-            <div class="subLibrary_Wrapper">
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_9"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_10"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_11"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_12"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_13"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_14"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_15"></div>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <div class="subCard" id="subCard_16"></div>
-                    </a>
-                </div>
-                
+            <div class="title_divider">
+                <p id="heading_title">Newest</p>
+                <div class="heading_underline" id="green_line"></div>
             </div>
         </div>
+
+        <div class="newest_container">
+            <div class="uploads_row">
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_1"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_1">Shells</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_1"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_1">DrLew</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_1">7 min ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_2"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_2">I AM</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_2"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_2">Cloud9</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_2">15 min ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_3"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_3">Where For Art Thou</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_3"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_3">Brookephase</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_3">35 min ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_4"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_4">Celestial</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_4"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_4">Pink Audio</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_4">48 min ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="uploads_row">
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_5"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_5">Infrared Plant Life</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_1"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_1">Wav3y</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_1">1 hour ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_6"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_6">010101 0101</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_2"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_2">Amy134</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_2">1 hour ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_7"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_7">Loud Silence</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_3"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_3">E16</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_3">5 hours ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_8"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_8">EXO</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_4"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_4">Crystal Studios</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_4">8 hours ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="uploads_row">
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_9"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_9">Artist Reborn</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_1"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_1">Huntsman</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_1">12 hours ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_10"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_10">Misfire. Go Again</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_2"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_2">Last fo Them</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_2">1 day ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_11"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_11">Hopeful</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_3"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_3">SquareOne</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_3"> 15 days ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="upload_card">
+                        <div class="upload_image" id="upload_image_12"></div>
+                        <div class="upload_info">
+                            <h2 class="upload_title" id="upload_title_12">Blanco.</h2>
+                            <div class="upload_creator_time_info">
+                                <div class="creator_dp" id="dp_4"></div>
+                                <div class="username_time">
+                                    <p class="upload_user" id="user_4">LateStudio</p>
+                                    <p class="upload_time_lapsed" id="time_lapse_4">2 months ago</p>
+                                </div>
+                                <div class="add_to_profile">
+                                    <img src="/assets/icons/small_add_bttn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="creator_CTA">
+            <div class="CTA_container">
+                <div id="be_a_creator">
+                    <h3 id="cta_heading">
+                        Hey, we get it, you’re loving what your listening to.
+                    </h3>
+                    <p class="cta_text">
+                        And, yeah, you wanna know how you can be a part of it too! It’s cool.
+                    </p>
+                    <p class="cta_text">
+                        Here, press that button over there and we’ll get your started. Have fun!
+                    </p>
+                    <div id="make_bttn">
+                        <a href="upload.html">
+                            <button class="c_cta_button">Listen, I Wanna Make</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <!-- End Of Main Content -->
 
     <!-- Footer -->
     <footer id="shuffleContent" class="footerSection">
-        <div class="ContentWrapper">
+        <div class="FooterNavWrapper">
             <div class="footerContent">
                 <div class="FooterMenu">
                     <a href="about.html" class="menuItem">About</a>
+                    <a href="#" class="menuItem">Creators</a>
+                    <a href="#" class="menuItem">User Guidelines</a>
                 </div>
                 <div id="copyRight">
                     <p>
-                         CHARRMELLO  &#169 2020
+                        CHARRMELLO &#169 2020
                     </p>
                 </div>
                 <div class="footerLogo">
-                    <img id="footerLogo" src="/assets/icons/Logo_Full Colour_charrmello.png" alt="Footer Logo">
+                    <img id="footerLogo" src="/assets/icons/footer_logo_blk_bg.png" alt="Footer Logo">
                 </div>
             </div>
         </div>
